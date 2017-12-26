@@ -4,3 +4,5 @@ Make it more generic for a user to be able to search for bachelors/associates an
 Optimize the code or use another algorithm to make the program more efficient.
 Add exception handler for timeouts (slow/no internet).
 Better format the sysout results.
+Check whether I need toString method in the College class.
+Add only true values. Ignore false values.

@@ -7,7 +7,6 @@ public class College {
 		this.institution = institution;
 	}
 	
-	//Need?
 	@Override
 	public String toString() {
 		return institution;

@@ -6,3 +6,4 @@ Was developed to help out a friend.
 Current version only supports master's degree majors. Plan on allowing the user to choose between master's/doctoral/bachelor's/associates and maybe other degrees.
 results.xlsx will store the results in an excel file.
 The initial results.xlsx file is a testing file that contains colleges and their respective values on whether they have a Computer Science Master's degree and Mathematics Master's degree.
+Unfortunately, due to some names not matching in the provided JSON file of this program with College Board's names, some of the colleges are missing. For example, College Board name: Harvard College; program's JSON file: Harvard University, so the program could not find it.
