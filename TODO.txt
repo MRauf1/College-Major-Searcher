@@ -1,0 +1,5 @@
+Instead of throw clauses, implement the try/catch block and properly handle exceptions.
+Handle exceptions during the scan.next...
+Make it more generic for a user to be able to search for bachelors/associates and other majors.
+Optimize the code or use another algorithm to make the program more efficient.
+Add exception handler for timeouts (slow/no internet).
