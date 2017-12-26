@@ -1,6 +1,12 @@
 College Major Searcher
 By Rauf Makharov
+----------
+To execute, run the CollegeResearch.java file via a terminal.
+javac CollegeResearch.java
+java CollegeResearch
 
+Or if you have an IDE, run CollegeResearch.java using that.
+----------
 Java program that searches through College Board's websites to find out which colleges offer certain majors and which ones do not.
 Was developed to help out a friend.
 Current version only supports master's degree majors. Plan on allowing the user to choose between master's/doctoral/bachelor's/associates and maybe other degrees.
