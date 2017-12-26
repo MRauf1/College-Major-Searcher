@@ -69,30 +69,13 @@ public class CollegeResearch {
 			String collegeName =  colleges[i].toString().toLowerCase().replace(" ", "-");
 			
 			//Connect to the web page
-			//WebDriver driver = new ChromeDriver();
 			driver.get("https://bigfuture.collegeboard.org/college-university-search/" + collegeName);
 			
 			boolean elementExists;
-			/*
-			//Exit the current window and continue if the page doesn't exist
-			if(driver.getCurrentUrl().equals("https://bigfuture.collegeboard.org/errors/error.html") || 
-					driver.getCurrentUrl().equals("https://bigfuture.collegeboard.org/college-search") ||
-					driver.getCurrentUrl().equals("https://bigfuture.collegeboard.org/find-colleges")) {
-				driver.close();
-				continue;
-			}
-			*/
+			
 			//Wait until the page loaded
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
-			/*
-			boolean elementExists = (boolean) ((JavascriptExecutor) driver).executeScript(
-					"if(document.getElementById('cpProfile_tabs_majorsAndLearning_anchor') == null) {"
-						+ "return false;"
-					+ "} else {"
-						+ "return true;"
-					+ "}");
-			*/
 			
 			elementExists = doesElementExist(driver, "cpProfile_tabs_majorsAndLearning_anchor");
 			
@@ -205,8 +188,10 @@ public class CollegeResearch {
 		
 	}
 	
+	//Check whether an entered element exists on the web page
 	public static boolean doesElementExist(WebDriver driver, String id) {
 		
+		//Execute the following JavaScript which checks whether the element exists
 		boolean elementExists = (boolean) ((JavascriptExecutor) driver).executeScript(
 				"if(document.getElementById('" + id + "') == null) {"
 					+ "return false;"
